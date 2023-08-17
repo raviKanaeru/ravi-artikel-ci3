@@ -1,0 +1,617 @@
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --animate-duration: 1000ms;
+    --animate-delay: 2s;
+  }
+
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+
+section,
+footer {
+  scroll-margin-top: 50px;
+  padding: 20px 0;
+}
+
+.brand-logo{
+    margin-top: 10px;
+}
+.navbar-background {
+    background-color: white;
+}
+
+.navbar-background a{
+    color: #1C6758;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.navbar-background .btn {
+    color: #F2F2F2;
+    margin-left: 50px;
+    font-style: normal;
+    padding-left:30px;
+    padding-right:30px;
+    font-weight: 600;
+}
+.btn{
+    text-transform: capitalize;
+    border-radius: 50px;
+    background: #1C6758;
+}
+
+.jumbotron {
+    height: 100vh;
+    background-position: center;
+	background-size: cover;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,0.2)),url('../../img/hero/hero3.jpg');
+}
+
+.jumbotron-about {
+    height: 100vh;
+    background-position: center;
+	background-size: cover;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.9),rgba(0,0,0,0.2)),url('../../img/hero/about.jpg');
+}   
+
+.jumbotron h1 {
+    margin-top: 120px;
+    color:white;
+    text-shadow: 0px 0px 0px black;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.jumbotron-about h1 {
+    margin-top: 120px;
+    color:white;
+    text-shadow: 0px 0px 0px black;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.jumbotron p {
+    color: #C1DEE2;
+}
+
+.jumbotron-about p {
+    color: #C1DEE2;
+}
+
+.jumbotron a {
+    background: #1C6758;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.jumbotron-about a {
+    background: #1C6758;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+/* flora */
+.jumbotron-flora {
+    height: 100vh;
+    background-position: center;
+	background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7),rgba(0,0,0,0.1)),url('../../img/hero/flora.jpg');
+}
+
+.jumbotron-flora h1 {
+    margin-top: 120px;
+    color:white;
+    text-shadow: 0px 0px 0px black;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.jumbotron-flora p {
+    color: #C1DEE2;
+}
+
+.jumbotron-flora a {
+    background: #1C6758;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+/* fauna */
+.jumbotron-fauna {
+    height: 100vh;
+    background-position: center;
+	background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../img/hero/fauna.jpg');
+}
+
+.jumbotron-fauna h1 {
+    margin-top: 120px;
+    color:white;
+    text-shadow: 0px 0px 0px black;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.jumbotron-fauna p {
+    color: #C1DEE2;
+}
+
+.jumbotron-fauna a {
+    background: #1C6758;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+/* iklim */
+.jumbotron-iklim {
+    height: 100vh;
+    background-position: center;
+	background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../img/hero/iklim.jpg');
+}
+
+.jumbotron-iklim h1 {
+    margin-top: 120px;
+    color:white;
+    text-shadow: 0px 0px 0px black;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.jumbotron-iklim p {
+    color: #C1DEE2;
+}
+
+.jumbotron-iklim a {
+    background: #1C6758;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+/* umri */
+.jumbotron-umri {
+    height: 100vh;
+    background-position: center;
+	background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../../img/hero/umri2.jpg');
+}
+
+.jumbotron-umri h1 {
+    margin-top: 120px;
+    color:white;
+    text-shadow: 0px 0px 0px black;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.jumbotron-umri p {
+    color: #C1DEE2;
+}
+
+.jumbotron-umri a {
+    background: #1C6758;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.title-main {
+    color: #1C6758;
+    font-weight:700;
+}
+
+.sub-title-main {
+    color: #757575;
+    font-weight: 600;
+}
+
+.slider img {
+    filter: brightness(50%);
+}
+
+.slider h3{
+    margin-top: 80px;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.slider .btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    padding-top: 2px;
+}
+
+.list-artikel{
+    box-shadow: 0px 0px 0px 0px;
+    border-radius: 10px;
+    padding: -100px !important;
+    margin-bottom: 75px !important;
+}
+
+.card-title{
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 0rem 3rem 0rem 0rem;
+    font-size: 1rem !important;
+    font-weight: 600;
+}
+
+.list-artikel img{
+    border-radius: 10px !important;
+
+}
+
+.list-artikel h6{
+    margin-top: -5px;
+    font-weight: 600;
+    color: #212121 ;
+    font-size:18px;
+}
+
+.list-artikel p{
+    color: #607d8b;
+    font-weight: 400;
+    font-size:0.93rem;
+}
+
+.popular h3{
+    margin-bottom: 10px;
+}
+
+.detail{
+    margin-top: 10px !important;
+    font-size: 10px;
+}
+
+.parallax-container {
+    height: 20%;
+}
+
+.parallax img {
+    filter: brightness(50%);
+}
+
+.carousel img {
+    width:auto;
+    height:auto;
+}
+
+footer{
+    background-color: #1C6758 !important;
+}
+footer p {
+    font-size: 15px;
+    display: flex;
+}
+
+footer li > a > p > i {
+    padding-right: 10px;
+}
+
+.dtl-about h5{
+    color: #1C6758;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.dtl-about p {
+    color: #1C6758;
+}
+
+.dt-artikel h6 {
+    color: #1C6758;
+}
+
+.card-panel{
+	padding-right: 45px !important;
+	padding-left: 35px !important;
+	border-radius:20px;
+	padding-top: 30px !important;
+	padding-bottom: 40px !important;
+}
+
+.login {
+    padding-top: 0% !important;
+    padding-left: 0% !important;
+    padding-buttom: 0% !important;
+    min-height: 500px; 
+    margin-top:100px; 
+    margin-bottom: 100px;
+}
+
+.login img {
+    border-radius: 10px;
+    margin-left:-12px !important;
+
+}
+.sl-bg h5 {
+    color: #1C6758; 
+    font-weight:700;
+    font-size:25px;
+}
+
+.bg-login{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0.0)),url('../../img/komponen/backup.jpg');
+}
+
+.page-artikel{
+    border-radius:10px;
+    margin-top:50px;
+}
+
+.page-artikel h1 {
+    color: black; 
+    font-weight:600;
+}
+
+.page-artikel p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+}
+
+.info-artikel{
+    margin-bottom: 100px !important;
+}
+
+.kategori-info{
+    margin-top: 20px;
+}
+
+.recent .foto-penulis {
+    margin-right: 10px;
+}
+
+.popular .foto-penulis {
+    margin-right: 10px;
+}
+
+.page-artikel .foto-penulis img {
+    margin-right: 0.5rem !important; 
+    border-radius: 50%;
+    width: 4.5rem;
+}
+
+.page-artikel .date-artikel {
+    margin-left: 1.5rem !important; 
+}
+
+.penulis {
+    display: block;
+    font-weight: 700;
+}
+
+.tanggal-artikel {
+    font-weight: 400;
+    color: #757575;
+}
+
+.kategori-page{
+    font-weight: 700;
+    color: #757575;
+}
+
+.sumber-referensi {
+    font-weight: 700;
+    color: #212121;
+}
+
+.referensi-info {
+    color: #1C6758;
+    font-weight: 600;
+}
+
+.kartu-art {
+    padding: 0;
+}
+
+.kartu-art p {
+    color: #607d8b;
+    font-weight: 400;
+    font-size:0.95rem;
+}
+
+.category-art {
+    background:#b2dfdb;
+    color:#009688;
+    font-weight:600;
+    box-shadow: 0 0 0 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border:none;
+    margin-top: 1rem;
+}
+
+.judul-art {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #212121;
+}
+
+
+
+.gambar-art img{
+    border-radius: 20px;
+    height: 18rem !important;
+}
+
+.foto-penulis-art {
+    margin-right: 10px;
+    margin-left: -10px !important;
+}
+
+.foto-penulis-sub {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: -10px !important;
+}
+
+.penulis-art {
+    display: block;
+    font-weight: 600;
+    font-size:12px;
+}
+
+.penulis-sub {
+    display: block;
+    font-weight: 600;
+    font-size:11px;
+    color: #212121;
+}
+
+.tanggal-artikel-art {
+    font-weight: 400;
+    color: #757575;
+    font-size:11px;
+}
+
+.tanggal-artikel-sub {
+    font-weight: 400;
+    color: #757575;
+    font-size:11px;
+}
+
+.date-artikel-art {
+    margin-top:-15px;
+}
+
+.date-artikel-sub {
+    margin-top: 10px;
+}
+
+.date-artikel-sub-slide {
+    margin-top: -3px;
+    margin-left: -5px !important;
+}
+
+.isi-art {
+    font-weight:300;
+    color:#9e9e9e;
+    font-size:1px;
+}
+
+.category-sub-art {
+    background:#b2dfdb;
+    color:#009688;
+    font-weight:600;
+    box-shadow: 0 0 0 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    padding: 12px 12px 12px 12px;
+    border:none;
+}
+
+.judul-list {
+    margin-top: 10px !important;
+}
+
+.flora-style {
+    background:#c8e6c9;
+    color:#2e7d32 ;
+}
+
+.fauna-style {
+    background:#ffcc80;
+    color:#e65100  ;
+}
+
+.iklim-style {
+    background:#b2ebf2 ;
+    color:#00838f;
+}
+
+.umri-style {
+    background:#b2dfdb;
+    color:#009688;
+}
+
+.about-us{
+    padding-top: 50px;
+}
+
+.info-about h6{
+    color: #1C6758;
+    font-weight: 600;
+    font-size:18px;
+}
+
+.info-about h5{
+    font-weight: 700;
+    font-size:28px;
+}
+
+.info-about p{
+    font-weight: 400;
+    color: #616161;
+    font-size: 14px;
+}
+
+.about-img{
+    border-radius: 0px 100px 0px 100px;
+    border: 5px solid #1C6758;
+}
+
+.info-about {
+    padding-top:10% !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+section h5 {
+    margin-bottom: 50px;
+}
+
+.foto-penulis-sub img{
+    border-radius: 25%;
+}
+
+
+.popular .card-content {
+    margin-left: -25px !important;
+}
+
+.side-img-bg {
+    padding-top: -120px !important; 
+    overflow:hidden;
+}
+
+.logo-login {
+    margin-top: 80px;
+}
+
+.right-side-login {
+    padding-left: 50px !important;
+}
+
+.right-side-login h5 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.paragraf p{
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
